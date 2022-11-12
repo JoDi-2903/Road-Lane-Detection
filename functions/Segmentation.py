@@ -1,7 +1,26 @@
 import cv2 as cv
-from Show_img import *
+import numpy as np
 from matplotlib import pyplot as plt
-from Manipulation import warp
+
+####################  Show_img  #########################
+# Show image inside defined plot
+def show_img(plt, title, img, numCols, pos, cmap):
+    plt.subplot(1, numCols, pos)
+    plt.title(title)
+    plt.imshow(img, cmap)
+
+
+####################  Manipulation  #########################
+# Source and destination for perspective transformation
+src = np.array([[598, 448], [684, 448], [1026, 668], [278, 668]], np.float32)
+dst = np.array([[300, 0], [980, 0], [980, 720], [300, 720]], np.float32)
+
+
+####################  Segmentation  #########################
+# Warp image perspective
+def warp(img, src=src, dst=dst):
+    M = cv.getPerspectiveTransform(src, dst)
+    return cv.warpPerspective(img, M, (img.shape[1], img.shape[0]))
 
 def image_segmentation():
     for x in range(8):    
