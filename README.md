@@ -17,15 +17,19 @@ Detect the lane markings or lanes in the [Udacity Nanodegree "Self-Driving Car E
 
 <h2>Overview diagrams of the processing steps</h2>
 
-![Screenshot 2022-06-25 183036](https://user-images.githubusercontent.com/88625959/199621038-05e5013c-b362-4cdd-a01d-a5462b39c018.png)
+![pipeline](https://user-images.githubusercontent.com/88625959/206852636-ab356e9c-4639-431f-8948-f91d8bf87ab6.png)
 
 <b>Figure 1:</b> <i>Image processing pipeline</i>
 <br/><br/>
 
-![Screenshot 2022-06-25 183036](https://user-images.githubusercontent.com/88625959/199621038-05e5013c-b362-4cdd-a01d-a5462b39c018.png)
+![rendering](https://user-images.githubusercontent.com/88625959/206852791-fab798fb-3a55-4f64-bbbe-7f5acb87269d.png)
 
 <b>Figure 2:</b> <i>Video processing and FPS-Counter</i>
 <br/><br/>
+
+<h2>Download ML Model</h2>
+For the object recognition of the cars in the video, a public machine learning model from YOLO was used. The file "weights" from "YOLOv3-320" must be downloaded and copied to the folder "yolov3" of the repository before execution.<br>
+https://pjreddie.com/darknet/yolo/
 
 <h2>Port to Android App</h2>
 
@@ -33,4 +37,6 @@ A separate GitHub repo has been created for the app, which can be accessed via t
 
 <h2>Credits</h2>
 
-x
+- [Udacity Nanodegree "Self-Driving Car Engineer" dataset](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013)
+- [YOLO: Real-Time Object Detection](https://pjreddie.com/darknet/yolo/)
+- [Tasks and examples provided by Dr. Daniel Slieter](https://de.linkedin.com/in/daniel-slieter)
