@@ -28,7 +28,7 @@ Detect the lane markings or lanes in the [Udacity Nanodegree "Self-Driving Car E
 <br/><br/>
 
 <h2>Download ML Model</h2>
-For the object recognition of the cars in the video, a public machine learning model from YOLO was used. The file "weights" from "YOLOv3-320" must be downloaded and copied to the folder "yolov3" of the repository before execution.<br>
+For the object recognition of the cars in the video, a public machine learning model from YOLO was used. The file "weights" from "YOLOv3-320" must be downloaded and copied to the folder "yolov3" of the repository before execution. Make sure that the file is named "yolov3.weights" so that the execution does not fail.<br>
 https://pjreddie.com/darknet/yolo/
 
 <h2>Port to Android App</h2>
